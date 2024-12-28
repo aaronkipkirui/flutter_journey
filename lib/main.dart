@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
 
-String getFullName(String fName, String lName){
-  return '$fName $lName';
-}
 
-void printMyName(){
-  // void returns no value
-}
 
-String snapChat(){
-  // with the data type you must have return value even if it is an empty string
-  return '';
-}
-
-String arrowFunction(int age, String name) => 
-'$age $name';
 void main() {
   runApp(const MyApp());
+}
+// control statements and collections
+void test(){
+  // conditional statements
+  final name = 'Aron';
+  if (name == 'Aaron'){
+    print("User $name");
+  } else {
+    print("User not Aron");
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -25,8 +22,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(getFullName('Fanny', "Kerubo"));
-    print(arrowFunction(27, 'Lynne'));
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
