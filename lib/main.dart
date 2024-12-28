@@ -7,13 +7,10 @@ void main() {
 }
 // control statements and collections
 void test(){
-//  sets in dart
-// dart compares strings 
-// two items with the same name can't be added in the same set
-// basically sets allows one to create unique list of items
-final name = {'foo', 'add', 'baz','food'};
-name.add('foo');
-print(name);
+// maps
+// used to hold key: value pairs of information
+const person = {'age': 20, 'name': 'Andrew'};
+print(person);
 }
 
 class MyApp extends StatelessWidget {
