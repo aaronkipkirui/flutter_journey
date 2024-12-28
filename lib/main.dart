@@ -12,6 +12,9 @@ String snapChat(){
   // with the data type you must have return value even if it is an empty string
   return '';
 }
+
+String arrowFunction(int age, String name) => 
+'$age $name';
 void main() {
   runApp(const MyApp());
 }
@@ -23,6 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print(getFullName('Fanny', "Kerubo"));
+    print(arrowFunction(27, 'Lynne'));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
