@@ -8,12 +8,8 @@ void main() {
 // control statements and collections
 void test(){
   // conditional statements
-  final name = 'Aron';
-  if (name == 'Aaron'){
-    print("User $name");
-  } else {
-    print("User not Aron");
-  }
+  final names = ['Foo', 'Bra', 'Baz'];
+  print(names[2]);
 }
 
 class MyApp extends StatelessWidget {
