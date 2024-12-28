@@ -7,9 +7,13 @@ void main() {
 }
 // control statements and collections
 void test(){
-  // conditional statements
-  final names = ['Foo', 'Bra', 'Baz'];
-  print(names[2]);
+//  sets in dart
+// dart compares strings 
+// two items with the same name can't be added in the same set
+// basically sets allows one to create unique list of items
+final name = {'foo', 'add', 'baz','food'};
+name.add('foo');
+print(name);
 }
 
 class MyApp extends StatelessWidget {
