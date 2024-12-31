@@ -6,9 +6,27 @@ void main() {
   runApp(const MyApp());
 }
 // control statements and collections
-void test(){
-// Chapter 5: Null safety
-const String ? name = null;
+void test( String? firstName, String? middleName, String? lastName){
+// const String? firstName = null;
+// const String? middleName = "Bar";
+// const String? lastName = "Baz";
+
+// if (firstName != null){
+//   print("First name is the first non null-vaue");
+// } else if (middleName != null){
+//   print("Middle name is first non-null value");
+// } else if(lastName != null){
+//   print("Last name is the first non-null value");
+// }else {
+//   print("No non-null value");
+// }
+
+// const firstNonNullValue = firstName ?? middleName ?? lastName;
+// print(firstNonNullValue);
+String? name = firstName;
+name ??= middleName;
+name ??= lastName;
+print(name);
 }
 
 
@@ -18,7 +36,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test();
+    test(null, null, "Baz");
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
