@@ -7,11 +7,10 @@ void main() {
 }
 // control statements and collections
 void test(){
-// maps
-// used to hold key: value pairs of information
-const person = {'age': 20, 'name': 'Andrew'};
-print(person);
+// Chapter 5: Null safety
+const String ? name = null;
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
